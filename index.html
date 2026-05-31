@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ge Gao</title>
+
+  <style>
+    :root {
+      --text: #222;
+      --muted: #666;
+      --light: #f6f6f6;
+      --border: #e0e0e0;
+      --link: #0056a6;
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .site-title {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      margin-left: 22px;
+      font-size: 15px;
+      color: #333;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 36px 24px;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 48px;
+    }
+
+    .sidebar {
+      border-right: 1px solid var(--border);
+      padding-right: 28px;
+    }
+
+    .avatar {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: var(--light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 52px;
+      font-weight: 700;
+      color: #999;
+      margin-bottom: 24px;
+    }
+
+    .name {
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0 0 8px;
+    }
+
+    .role {
+      font-size: 16px;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .info {
+      font-size: 15px;
+      color: #444;
+      margin-bottom: 8px;
+    }
+
+    .links {
+      margin-top: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 15px;
+    }
+
+    main h1 {
+      font-size: 30px;
+      margin: 0 0 18px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+
+    main h2 {
+      font-size: 24px;
+      margin-top: 36px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+    }
+
+    main h3 {
+      font-size: 18px;
+      margin-top: 26px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .news li {
+      margin-bottom: 8px;
+    }
+
+    .publication {
+      margin-bottom: 22px;
+    }
+
+    .pub-title {
+      font-weight: 700;
+    }
+
+    .pub-meta {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      margin: 4px 6px 4px 0;
+      color: #444;
+    }
+
+    .project {
+      border-left: 3px solid var(--border);
+      padding-left: 16px;
+      margin-bottom: 22px;
+    }
+
+    footer {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 28px 24px 48px;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 800px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding-right: 0;
+        padding-bottom: 28px;
+      }
+
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .nav-links a {
+        margin-left: 0;
+        margin-right: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="nav">
+      <div class="site-title">Ge Gao</div>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="avatar">GG</div>
+
+      <h1 class="name">Ge Gao</h1>
+
+      <div class="role">
+        Research Assistant<br />
+        Human-Computer Interaction · Digital Health · Wearable Interaction
+      </div>
+
+      <div class="info"><strong>Research Areas</strong></div>
+      <div class="info">Human-Computer Interaction</div>
+      <div class="info">Digital Health</div>
+      <div class="info">Wearable Interaction</div>
+      <div class="info">Explainable AI</div>
+      <div class="info">Design Research</div>
+
+      <div class="links">
+        <a href="mailto:gaoge.rita@gmail.com">Email</a>
+        <a href="https://gaogerita.wixsite.com/gaoge" target="_blank">Personal Website</a>
+        <a href="#publications">Publications</a>
+        <a href="#cv">CV</a>
+      </div>
+    </aside>
+
+    <main id="home">
+      <h1>Bio</h1>
+
+      <p>
+        I am a research assistant working at the intersection of Human-Computer Interaction,
+        digital health, wearable systems, explainable AI, and design. My research explores how
+        complex health, behavioral, and physiological data can be translated into understandable,
+        embodied, and reflective interaction systems.
+      </p>
+
+      <p>
+        My background is in product design and interaction design. I received my undergraduate
+        degree in Product and Automotive Design from Shandong University of Art & Design, and my
+        master's degree in Product Design from Nihon University College of Art. During my master's
+        study, I also worked at Huawei Japan, where I gained experience in wearable and mobile
+        interaction design.
+      </p>
+
+      <p>
+        My recent work focuses on health interaction systems, wearable sensing, human-food
+        interaction, and digital fabrication. I am especially interested in designing technologies
+        that help people understand body-related data and reflect on everyday health and well-being.
+      </p>
+
+      <h2>Research Interests</h2>
+
+      <span class="tag">Human-Computer Interaction</span>
+      <span class="tag">Digital Health</span>
+      <span class="tag">Wearable Systems</span>
+      <span class="tag">Explainable AI</span>
+      <span class="tag">Human-Food Interaction</span>
+      <span class="tag">Digital Fabrication</span>
+      <span class="tag">Design Research</span>
+
+      <h2>News</h2>
+
+      <ul class="news">
+        <li><strong>2026</strong> — Our paper on human-in-the-loop wearable sensing was accepted to IEEE RA-L.</li>
+        <li><strong>2025</strong> — KiriInflate was accepted to UIST 2025.</li>
+        <li><strong>2025</strong> — NutriLoop was accepted to BodySys @ UbiComp/ISWC 2025.</li>
+        <li><strong>2025</strong> — ChronoBite was accepted as a MobiCom 2025 poster.</li>
+      </ul>
+
+      <section id="publications">
+        <h2>Publications</h2>
+
+        <h3>Conference Papers</h3>
+
+        <div class="publication">
+          <div class="pub-title">
+            KiriInflate: Fabricating Mini Inflatables with High-Amplitude Contraction and Tunable Stretchability for Tangible Interaction
+          </div>
+          <div class="pub-meta">
+            UIST 2025.
+          </div>
+        </div>
+
+        <h3>Journal Papers</h3>
+
+        <div class="publication">
+          <div class="pub-title">
+            Human-in-the-Loop Capacitive Microphone Sensors-Based Muscle Sensing System for Predictive and Adaptive Exoskeleton Assistance
+          </div>
+          <div class="pub-meta">
+            IEEE Robotics and Automation Letters, 2026.
+          </div>
+        </div>
+
+        <h3>Workshop Papers</h3>
+
+        <div class="publication">
+          <div class="pub-title">
+            NutriLoop: A Cellular Aging-Aware Dietary Feedback Framework via Inflammation and Telomere Association
+          </div>
+          <div class="pub-meta">
+            BodySys @ UbiComp/ISWC 2025.
+          </div>
+        </div>
+
+        <h3>Posters and Demos</h3>
+
+        <div class="publication">
+          <div class="pub-title">
+            ChronoBite: Diet Meets Cellular Aging
+          </div>
+          <div class="pub-meta">
+            MobiCom 2025 Poster.
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Selected Projects</h2>
+
+        <div class="project">
+          <h3>DIIve: Inflammation-Aware Dietary Feedback</h3>
+          <p>
+            DIIve is a human-food interaction system that translates inflammation-aware dietary
+            analysis into reflective feedback about food choices, body experiences, and subjective
+            well-being. The project explores how abstract dietary signals can become more
+            understandable and actionable in everyday life.
+          </p>
+        </div>
+
+        <div class="project">
+          <h3>KiriInflate: Soft Inflatable Interfaces</h3>
+          <p>
+            KiriInflate explores soft inflatable structures for tangible interaction. My work
+            contributed to the development of soft inflatable prototypes and application examples,
+            including wearable assistive interfaces and interactive objects.
+          </p>
+        </div>
+
+        <div class="project">
+          <h3>Wearable Muscle Sensing for Exoskeleton Assistance</h3>
+          <p>
+            This project investigates human-in-the-loop wearable sensing for predictive and adaptive
+            exoskeleton assistance. It connects wearable sensing, human movement, and adaptive
+            feedback for assistive robotics.
+          </p>
+        </div>
+
+        <div class="project">
+          <h3>NutriLoop and ChronoBite</h3>
+          <p>
+            These projects explore how dietary structure, inflammation-related analysis, and
+            cellular-aging-related concepts can be translated into interactive feedback systems for
+            health reflection and everyday dietary decision-making.
+          </p>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+
+        <ul>
+          <li>
+            <strong>Research Assistant</strong>, Fudan University.
+          </li>
+          <li>
+            <strong>Research Assistant</strong>, Zhejiang University HCI Lab.
+          </li>
+          <li>
+            <strong>Design Experience</strong>, Huawei Japan.
+          </li>
+          <li>
+            <strong>MA in Product Design</strong>, Nihon University College of Art.
+          </li>
+          <li>
+            <strong>BA in Product and Automotive Design</strong>, Shandong University of Art & Design.
+          </li>
+        </ul>
+      </section>
+
+      <section id="cv">
+        <h2>CV</h2>
+
+        <p>
+          My CV is available upon request. A downloadable PDF version will be added soon.
+        </p>
+
+        <p>
+          Suggested file name for upload:
+          <strong>Ge_Gao_CV.pdf</strong>
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+
+        <p>
+          Email: <a href="mailto:gaoge.rita@gmail.com">gaoge.rita@gmail.com</a>
+        </p>
+
+        <p>
+          Personal website:
+          <a href="https://gaogerita.wixsite.com/gaoge" target="_blank">
+            gaogerita.wixsite.com/gaoge
+          </a>
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    © 2026 Ge Gao. Last updated May 2026.
+  </footer>
+</body>
+</html>
